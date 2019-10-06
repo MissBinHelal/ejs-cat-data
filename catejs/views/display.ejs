@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= cat['name'] %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/style.css" />
+</head>
+<body>
+    <h1>information about  <%= cat.name %></h1>
+    <img src="<%= cat['url'] %>" alt="<%= cat['name'] %>">
+    <div class="content">
+        Age: <%= cat.age %> months 
+    </div>
+    <div class="content">
+    <!--     favorite games: 
+        <ul>
+            <% for (var games in cat['games']) { %>
+                <li><%= cat['games'][game] %></li>
+            <% } %> -->
+        </ul>
+    </div>
+</body>
+</html>
