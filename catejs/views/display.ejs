@@ -14,11 +14,11 @@
         Age: <%= cat.age %> months 
     </div>
     <div class="content">
-    <!--     favorite games: 
+        favorite games: 
         <ul>
-            <% for (var games in cat['games']) { %>
-                <li><%= cat['games'][game] %></li>
-            <% } %> -->
+            <% for (var game in cat.games ) { %>
+                <li><%= cat.games[game] %></li>
+            <% } %>
         </ul>
     </div>
 </body>
